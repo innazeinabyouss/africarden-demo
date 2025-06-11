@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africarden</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div id="logo">
+                <img src="logo.png" alt="Logo Africarden">
+                <span class="brand-name"></span>
+            </div>
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Nos produits</a></li>
+                    <li><a href="#labels">Nos Labels</a></li>
+                    <li><a href="#zones">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="nav-mobile">
+            <ul class="nav-list-mobile">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#labels">Nos Labels</a></li>
+                <li><a href="#zones">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section id="presentation" class="centered-section">
+        <h2>Qui sommes-nous ?</h2>
+       <p>
+  Chez <span class="anim-africarden">Africarden</span>, nous valorisons le terroir 
+  <span class="anim-camerounais">camerounais</span> en sélectionnant le meilleur de nos récoltes dans 
+  <span class="anim-chiffre">les 10 régions</span>. Grâce à notre réseau local, vos produits arrivent frais partout au Cameroun 
+  <span class="anim-rapide">en moins de 48h</span>. 
+  <span class="anim-clients">Plus de 10 000 clients</span> nous font déjà confiance pour la qualité et l’authenticité de nos saveurs.
+</p>
+    </section>
+
+    <section id="produits" class="centered-section">
+  <h2>Nos produits</h2>
+  <div class="produits-row">
+    <div class="produit">
+      <img src="banane.png" alt="Sacs de farine de banane plantain">
+      <div class="nom-produit">Sacs de farine de banane plantain</div>
+    </div>
+    <div class="produit">
+      <img src="cacao.png" alt="Sacs de farine de cacao">
+      <div class="nom-produit">Sacs de farine de cacao</div>
+    </div>
+    <div class="produit">
+      <img src="cafe.png" alt="Sacs de café Arabica">
+      <div class="nom-produit">Sacs de café Arabica</div>
+    </div>
+    <div class="produit">
+      <img src="mais.png" alt="Sacs de farine de mais">
+      <div class="nom-produit">Sacs de farine de mais</div>
+    </div>
+    <div class="produit">
+      <img src="manioc.png" alt="Sacs de farine de manioc">
+      <div class="nom-produit">Sacs de farine de manioc</div>
+    </div>
+  </div>
+</section>
+
+   <section id="labels" class="centered-section">
+  <h2>Nos Labels</h2>
+  <div class="labels-logos">
+    <img src="images.jpeg" alt="Label Made in Cameroun" class="logo-label anim-label">
+    <img src="iso.jpg" alt="Label ISO 22000" class="logo-label anim-label">
+    <img src="0OXgE8s1_400x400.jpg" alt="Label ANOR" class="logo-label anim-label">
+  </div>
+</section>
+
+<section id="calculateur-impact" class="centered-section">
+  <h2>Calculateur d’impact environnemental</h2>
+  <form id="impactForm">
+    <label for="produit">Produit :</label>
+    <select id="produit" required>
+      <option value="" disabled selected>Choisissez un produit</option>
+      <option value="banane">Farine de banane plantain</option>
+      <option value="cacao">Farine de cacao</option>
+      <option value="cafe">Café Arabica</option>
+      <option value="mais">Farine de maïs</option>
+      <option value="manioc">Farine de manioc</option>
+    </select>
+    <label for="quantite">Quantité achetée (kg) :</label>
+    <input type="number" id="quantite" min="1" value="1" required>
+    <label for="achat-local">
+      <input type="checkbox" id="achat-local" checked>
+      Achat local (production et distribution locale)
+    </label>
+    <button type="submit">Calculer mon impact</button>
+  </form>
+  <div id="impactResult" style="display:none; margin-top:20px;"></div>
+</section>
+
+<section id="blog" class="centered-section">
+  <h2>Le blog Africarden</h2>
+  <div class="blog-cards">
+    <article class="blog-card">
+      <img src="1.png" alt="Agriculture durable">
+      <h3>Agriculture durable : pourquoi privilégier le local ?</h3>
+      <p>Découvrez comment l’achat local contribue à la préservation de l’environnement et soutient les producteurs camerounais.</p>
+      <a href="#" class="btn-lire-plus">Lire plus</a>
+    </article>
+    <article class="blog-card">
+      <img src="2.png" alt="Astuces consommation responsable">
+      <h3>5 astuces pour consommer responsable au Cameroun</h3>
+      <p>Adoptez des gestes simples au quotidien pour réduire votre impact écologique tout en valorisant les produits du terroir.</p>
+      <a href="#" class="btn-lire-plus">Lire plus</a>
+    </article>
+    <article class="blog-card">
+      <img src="3.png" alt="Labels qualité">
+      <h3>Comprendre les labels qualité sur nos produits</h3>
+      <p>Apprenez à reconnaître les labels et certifications qui garantissent la qualité et la traçabilité de vos achats.</p>
+      <a href="#" class="btn-lire-plus">Lire plus</a>
+    </article>
+  </div>
+</section>
+
+<section id="newsletter" class="centered-section">
+  <h2>Newsletter Africarden</h2>
+  <p>Recevez chaque mois des conseils, des actus et des offres exclusives pour mieux consommer local et durable. Ne manquez rien !</p>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Votre email" required>
+    <button type="submit">Je m’inscris</button>
+  </form>
+</section>
+
+    <section id="faq" class="centered-section">
+        <h2>FAQ</h2>
+      <div class="faq-list">
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>1. Quels sont vos principaux produits ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nous proposons des farines, cacao, café, et produits transformés issus de l’agriculture camerounaise.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>2. Où sont situées vos plantations ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nos plantations couvrent toutes les 10 régions du Cameroun.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>3. Vos produits sont-ils certifiés ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, nous sommes certifiés ISO 22000 et labellisés “Produit du Cameroun”.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>4. Livrez-vous partout au Cameroun ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, nous livrons dans toutes les régions du Cameroun sous 48h.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>5. Comment passer commande ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Directement sur notre site ou par téléphone/email via la section Contact.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>6. Proposez-vous des tarifs pour les professionnels ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, des tarifs préférentiels sont disponibles pour les commandes en gros et les partenaires.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>7. Vos produits sont-ils naturels ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nos produits sont 100% naturels, sans conservateurs ni additifs.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>8. Puis-je visiter vos plantations ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Oui, sur rendez-vous, nous organisons des visites pour nos clients et partenaires.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>9. Quels sont vos engagements environnementaux ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Nous pratiquons l’agriculture durable et soutenons les communautés locales.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+            <span>10. Comment vous contacter ?</span>
+            <span class="faq-arrow">&#9662;</span>
+        </button>
+        <div class="faq-answer">
+            <p>Via le formulaire ci-dessous, par téléphone ou par email (voir en bas de page).</p>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section id="contact" class="centered-section">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="confirmation" style="display:none;">Merci pour votre message !</div>
+    </section>
+    </main>
+
+    <section id="paiements" class="centered-section">
+  <h2>Moyens de paiement acceptés</h2>
+  <div class="paiement-logos">
+    <img src="visa.svg" alt="Visa" title="Visa">
+    <img src="mastercard.svg" alt="Mastercard" title="Mastercard">
+    <img src="om.svg" alt="Orange Money" title="Orange Money">
+    <img src="mtn.png" alt="MTN Mobile Money" title="MTN Mobile Money">
+  </div>
+  <p class="paiement-note">Payez en toute sécurité par carte bancaire ou Mobile Money (Orange, MTN).</p>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Africarden. Tous droits réservés.</p>
+        <p>Tél : +237 6 99 99 99 99 | Email : contact@africarden.cm<br>
+        Adresse : BP 12345, Yaoundé, Cameroun</p>
+    </footer>
+    <div class="contact-floating-buttons">
+  <a href="https://wa.me/237699999999" class="btn-whatsapp" target="_blank" aria-label="WhatsApp">
+    <img src="whatsapp.svg" alt="WhatsApp" />
+  </a>
+</div>
+
+<div class="dashboard-floating-btn" id="open-dashboard" title="Voir les prix du marché">
+  <img src="prix.png" alt="Tableau de bord des prix" />
+</div>
+<div class="dashboard-modal" id="dashboard-modal">
+  <div class="dashboard-modal-content">
+    <button class="close-dashboard" id="close-dashboard" aria-label="Fermer">×</button>
+    <h3>Prix du marché en temps réel</h3>
+    <table class="dashboard-table">
+      <thead>
+        <tr>
+          <th>Culture</th>
+          <th>Prix d'achat (FCFA/kg)</th>
+        </tr>
+      </thead>
+      <tbody id="dashboard-table-body">
+        <!-- Les lignes seront générées par JS -->
+      </tbody>
+    </table>
+    <p class="dashboard-note">Données à titre indicatif, actualisées régulièrement.</p>
+  </div>
+</div>
+    <script src="js.js"></script>
+</body>
+</html>
