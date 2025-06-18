@@ -310,11 +310,6 @@ header {
   height: 120px;
 }
 
-#contactForm label {
-  align-self: flex-start;
-  color: var(--vert-fonce);
-  font-weight: 500;
-}
 #contactForm input,
 #contactForm textarea {
   width: 100%;
@@ -524,33 +519,6 @@ footer p {
   from { opacity: 1; }
   to   { opacity: 0.7; }
 }
-.labels-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 36px;
-  margin-top: 18px;
-}
-
-.logo-label {
-  width: 100%;
-  max-width: 120px;      /* Ajuste selon le rendu souhaité */
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-@media (max-width: 600px) {
-  .logo-label {
-    max-width: 80px;
-  }
-}
-
-/* Animation d’apparition */
-.anim-label {
-  animation: popIn 1s cubic-bezier(.68,-0.55,.27,1.55);
-}
-
 @keyframes popIn {
   0% { transform: scale(0.7) rotate(-12deg); opacity: 0; }
   80% { transform: scale(1.08) rotate(3deg); opacity: 1; }
